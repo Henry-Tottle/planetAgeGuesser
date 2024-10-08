@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <title>Planet Age Calculator</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header><h1>How old are you on different planets?</h1></header>
+
+<section class="planetButtons">
+    <div class="ageInput">
+        <label for="currentAge">Current Age: </label>
+        <input type="number" id="currentAge" min="1" value="1">
+    </div>
+    <h2>Pick a planet: </h2>
+    <div class="planetSelector">
+        <div>
+            <label for="Mercury">Mercury -></label>
+            <input type="radio" value="Mercury" name="pickPlanet" class="planetPicker" id="Mercury" checked>
+        </div>
+        <div>
+            <label for="Venus">Venus -></label>
+            <input type="radio" value="Venus" name="pickPlanet" class="planetPicker" id="Venus">
+        </div>
+        <div>
+            <label for="Mars">Mars -></label>
+            <input type="radio" value="Mars" name="pickPlanet" class="planetPicker" id="Mars">
+        </div>
+        <div>
+            <label for="Jupiter">Jupiter -></label>
+            <input type="radio" value="Jupiter" name="pickPlanet" class="planetPicker" id="Jupiter">
+        </div>
+        <div>
+            <label for="Saturn">Saturn -></label>
+            <input type="radio" value="Saturn" name="pickPlanet" class="planetPicker" id="Saturn">
+        </div>
+    </div>
+    <button>Calculate</button>
+</section>
+<section class="outputSection">
+    <p class="output"></p>
+</section>
+
+</body>
+</html>

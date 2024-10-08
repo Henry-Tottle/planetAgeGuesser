@@ -1,0 +1,70 @@
+body {
+    color: white;
+    background-image: url("pexels-philippedonn-1257860.jpg");
+    background-size: cover;
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+header, .planetButtons {
+    text-align: center;
+}
+
+
+header {
+    margin-bottom: 5rem;
+}
+
+.ageInput {
+    margin-bottom: 3rem;
+}
+
+.planetSelector {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.planetSelector div {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+button {
+    margin: 5rem;
+    padding: 3rem;
+    border-radius: 15pt;
+    background: rgba(255, 255, 255, 0.06);
+    font-size: 1.5rem;
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+.outputSection {
+margin-left: 6rem;
+}
+
+.output {
+    /*text-align: center;*/
+    margin: 0 auto;
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+
+}
+
+.animate {
+    animation-name: textAppear;
+    animation-duration: 5s;
+}
+
+@keyframes textAppear {
+    0% {
+        overflow: hidden;
+    }
+
+
+    100% {
+        width: 150%;
+    }
+}
